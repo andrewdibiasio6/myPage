@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Andrew's First Web Page</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/Main_Style.css" />
+  <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript" src="Mult.js"></script>
+  <!-- Andrew DiBiasio andrew_dibiasio@student.uml.edu 
+       I am a Computer Science Major at the University of Massachusetts Lowell and I created this file as part of and
+       assignment for my course 91.461 GUI Programming I. This html page uses jscript to create a dynamic mutiplication table
+	 -->
+
+</head>
+
+<body>
+
+  <!-- This block of code is my Navigation list -->
+  <div class="Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Shel_Silverstein.html">Poem</a></li>
+      <li><a href="Mult.html">Multiply</a></li>
+    </ul>
+  </div>
+  <!-- End of Navigation div -->
+
+  <div id="Background_layer2" class="background">
+    <div id="page" class="background">
+
+      <h1 class="title">Multiplication Table</h1>
+
+      <!-- This block of code -->
+      <div id="Body1">
+        <form name="multiplicationForm" id="multiplicationForm" action:"javascript:void(0)">
+
+          Multiply Start:<input type="text" name="multiplyStart" id="multiplyStart" size="10" tabindex="1"/> 
+          Multiply End:<input type="text" name="multiplyEnd" id="multiplyEnd" size="10" tabindex="1"/><br/> 
+          Multiplicand Start:<input type="text" name="multiplicandStart" id="multiplicandStart" size="10" tabindex="1"/> 
+          Multiplicand End:<input type="text" name="multiplicandEnd" id="multiplicandEnd" size="10" tabindex="1"/><br/>
+          <input type="submit" name="CreateTable" id="CreateTable" value="Create Table" tabindex="2"/> 
+
+        </form>
+        <div id="test"></div>
+        <table id="table">
+          <tbody id="tbody"> </tbody>
+        </table>
+      </div>
+      <!-- End of Body1 div -->
+    </div>
+    <!-- End of page dev -->
+  </div>
+  <!-- End of Background_layer2 dev -->
+</body>
+</html>
+

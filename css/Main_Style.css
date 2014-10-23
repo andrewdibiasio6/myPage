@@ -12,15 +12,13 @@ to gray. Created: September 11, 2014 9:00 PM */
 /*This rule changes font style, centers font, and changes furthest background color*/
 
 body {             
-    background-color: #941010;
+    padding: 40px;
+  background-color: #941010;
     text-align: center;
     font-family:'Berlin Sans FB', Arial, sans-serif;
     font-size: large;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     line-height: 1.15;
+  margin-top: 136px;
 }
 
 /* Adds attributes to the class background*/
@@ -80,3 +78,13 @@ body {
 #Main_second_nav {
     background-color:#fff;
 }
+
+
+/*adds style too table*/
+table, tbody, td {
+    background: orange;
+    width:  80%;
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
