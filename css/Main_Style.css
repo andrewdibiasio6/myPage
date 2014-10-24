@@ -6,85 +6,97 @@ to gray. Created: September 11, 2014 9:00 PM */
 
 
 .title {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 /*This rule changes font style, centers font, and changes furthest background color*/
 
-body {             
-    padding: 40px;
+body {
+  padding: 40px;
   background-color: #941010;
-    text-align: center;
-    font-family:'Berlin Sans FB', Arial, sans-serif;
-    font-size: large;
-    line-height: 1.15;
+  text-align: center;
+  font-family: 'Berlin Sans FB', Arial, sans-serif;
+  font-size: large;
+  line-height: 1.15;
   margin-top: 136px;
 }
 
 /* Adds attributes to the class background*/
 .background {
-    background-color: #470a67;
-    border-radius: 20px;
-    position: relative;
-    padding-top:20px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; /* Make the container 100% of the page width */
-    max-width: 100%; /* But stop stretching out at 100% */
-    min-width: 400px; /* And stretching in at 400px% */
-    height: 100%;
+  background-color: #470a67;
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Make the container 100% of the page width */
+  max-width: 100%; /* But stop stretching out at 100% */
+  min-width: 400px; /* And stretching in at 400px% */
+  height: 100%;
 }
 
 /* adds the closest background */
 #page.background {
-    background-color: #fff;
-    border-radius: 20px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width:80%; /* Make the container 80% of the page width */
-    max-width: 95%; /* But stop stretching out at 95% */
-    min-width: 30%; /* And stretching in at 30% */
-    height: 85%; 
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Make the container 80% of the page width */
+  max-width: 95%; /* But stop stretching out at 95% */
+  min-width: 30%; /* And stretching in at 30% */
+  height: 85%;
 }
 
 /*This class picture assures that all my pictures will resize as the user adjusts the window*/
 .picture {
-    max-width: 90%;
-    height: auto;
-    margin: 0px 0px 10px;
-    border-radius:20px;
-}
-    
-.Navigation {
-    background-color: #bc3b3b;
-    border-radius: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    float:initial;
+  max-width: 90%;
+  height: auto;
+  margin: 0px 0px 10px;
+  border-radius: 20px;
 }
 
-/* displays Navigation list items inline*/
-.Navigation li {
-    display:inline-block;
-    padding-right: 13%; 
+.Navigation {
+  background-color: #bc3b3b;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: initial;
+}
+
+  /* displays Navigation list items inline*/
+  .Navigation li {
+    display: inline-block;
+    padding-right: 13%;
     padding-left: 13%;
-    }
+  }
 
 /*adjusts index's second nav */
 #Main_second_nav {
-    background-color:#fff;
+  background-color: #fff;
 }
 
 
 /*adds style too table*/
-table, tbody, td {
-    background: orange;
-    width:  80%;
-    border: 1px solid red;
-    border-collapse: collapse;
+table, tbody {
+  margin: 0px 0px 10px;
+  text-align: center;
+  background: orange;
+  width: 80%;
+  max-width: 80%;
+  border: 1px solid red;
 }
 
+td {
+  background: orange;
+  border: 1px solid red;
+  margin: 0px 0px 10px;
+  text-align: center;
+  background: orange;
+  max-width: 80%;
+  max-height:80%;
+  border: 1px solid red;
+}

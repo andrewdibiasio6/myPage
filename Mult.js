@@ -51,7 +51,10 @@ $(document).ready(function () /* waits till document is ready */ {
       return false;
     }
 
+    $("#tbody").empty();
+
     $("#tbody").append("<tr>");      // Here, I start my first table row
+    $("#tbody").append($("<td></td>").text(" "));
 
     for (i = this.multiplyStart.value; i <= this.multiplyEnd.value; i++) {   // This loop creates my and completes the data
       $("#tbody").append($("<td></td>").text(i));                                            // for the rest of the table's first row
@@ -62,13 +65,14 @@ $(document).ready(function () /* waits till document is ready */ {
     //  All other table rows are pouplated with data with the following code______________________________________________________________________________
 
 
+
     for (k = this.multiplicandStart.value; k <= multiplicandEnd.value; k++) // This loop moves the the rest of my tbody rows, they all have the same format
     {
-
-      $("#tbody").append($("<tr><td></td>").text(k));      // Here, I start all other rows after the first
+      $("#tbody").append($("<tr>"));
+      $("#tbody").append($("<td></td>").text(k));      // Here, I start all other rows after the first
 
       for (j = this.multiplyStart.value; j <= this.multiplyEnd.value; j++) {   // This loop creates my and completes the data
-        $("#tbody").append($("<td></td>").text(i * j));                             // for the rest of the table rows  
+        $("#tbody").append($("<td></td>").text(k * j));                             // for the rest of the table rows  
       }
 
       $("#tbody").append("</tr>");  // a table row is finished
