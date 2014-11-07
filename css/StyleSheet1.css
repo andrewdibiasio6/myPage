@@ -1,0 +1,82 @@
+﻿/* Andrew DiBiasio andrew_dibiasio@student.uml.edu 
+I am a Computer Science Major at the University of Massachusetts Lowell. I created this file as part of and
+assignment for my course 91.461 GUI Programming I. This is my Main_Style sheet that changes the background of all files
+to gray. Created: September 11, 2014 9:00 PM */
+
+
+
+.title {
+  font-size: 50px;
+}
+
+/*This rule changes font style, centers font, and changes furthest background color*/
+
+body {
+  padding: 40px;
+  background-color: #941010;
+  text-align: center;
+  font-family: 'Berlin Sans FB', Arial, sans-serif;
+  font-size: large;
+}
+
+/* Adds attributes to the class background*/
+.background {
+  background-color: #470a67;
+  border-radius: 20px;
+}
+
+/* adds the closest background */
+#page.background {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+
+}
+
+/*This class picture assures that all my pictures will resize as the user adjusts the window*/
+.picture {
+  height: auto;
+  margin: 0px 0px 10px;
+  border-radius: 20px;
+}
+
+.Navigation {
+  background-color: #bc3b3b;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: initial;
+}
+
+  /* displays Navigation list items inline*/
+  .Navigation li {
+    display: inline-block;
+    padding-right: 13%;
+    padding-left: 13%;
+  }
+
+/*adjusts index's second nav */
+#Main_second_nav {
+  background-color: #fff;
+}
+
+
+/*adds style too table*/
+table, tbody {
+  margin: 0px 0px 10px;
+  text-align: center;
+  background: orange;
+  border: 1px solid red;
+}
+
+td {
+  background: orange;
+  border: 1px solid red;
+  margin: 0px 0px 10px;
+  text-align: center;
+  background: orange;
+  max-height:80%;
+  border: 1px solid red;
+}
