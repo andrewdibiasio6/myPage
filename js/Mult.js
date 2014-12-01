@@ -1,4 +1,4 @@
-/* javaScript file that creates a dynamic mulitplication tbody from values inserted in my form in the file Mult.js
+﻿/* javaScript file that creates a dynamic mulitplication tbody from values inserted in my form in the file Mult.js
    created by Andrew DiBiasio on Oct 23, 2014 */
 
 var i;  //loop indices
