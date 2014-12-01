@@ -124,40 +124,45 @@ $(document).ready(function () /* waits till document is ready */ {
     } // end of success
   }); // end of validate
 
+
   $("#multiplicationForm").submit(function () { // trap the submit event *before* the action is executed. This is where my table is generated.
 
-    $("#tbody").empty();
+    console.log("Valid Form:");
+    console.log($("#multiplicationForm").valid())  // logging if the form is valid to the console
 
-    $("#tbody").append("<tr>"); // Here, I start my first table row
-    $("#tbody").append($("<td></td>").text(" "));
-
-
-    // parsing all strings to ints
-    mStartValue = parseInt(this.multiplyStart.value);
-    mEndValue = parseInt(this.multiplyEnd.value);
-    mcStartValue = parseInt(this.multiplicandStart.value);
-    mcEndValue = parseInt(this.multiplicandEnd.value);
-
-
-    for (i = mStartValue; i <= mEndValue; i++) {   // This loop creates my and completes the data
-      $("#tbody").append($("<td></td>").text(i));  // for the rest of the table's first row
-    }
-    $("#tbody").append("</tr>");  // first table row is finished
-
-    //  All other table rows are pouplated with data with the following code_____________________________________________________
-
-    for (k = mcStartValue; k <= mcEndValue; k++) // This loop moves the the rest of my tbody rows, they all have the same format
+    if ($("#multiplicationForm").valid())  // if the form is valid, generate table.
     {
-      $("#tbody").append($("<tr>"));
-      $("#tbody").append($("<td></td>").text(k));      // Here, I start all other rows after the first
+      $("#tbody").empty();
 
-      for (j = mStartValue; j <= mEndValue; j++) {   // This loop creates my and completes the data
-        $("#tbody").append($("<td></td>").text(k * j)); // for the rest of the table rows  
+      $("#tbody").append("<tr>"); // Here, I start my first table row
+      $("#tbody").append($("<td></td>").text(" "));
+
+      // parsing all strings to ints
+      mStartValue = parseInt(this.multiplyStart.value);
+      mEndValue = parseInt(this.multiplyEnd.value);
+      mcStartValue = parseInt(this.multiplicandStart.value);
+      mcEndValue = parseInt(this.multiplicandEnd.value);
+
+      for (i = mStartValue; i <= mEndValue; i++) {   // This loop creates my and completes the data
+        $("#tbody").append($("<td></td>").text(i));  // for the rest of the table's first row
       }
+      $("#tbody").append("</tr>");  // first table row is finished
 
-      $("#tbody").append("</tr>");  // a table row is finished
-    }
-  });
+      //  All other table rows are pouplated with data with the following code_____________________________________________________
+
+      for (k = mcStartValue; k <= mcEndValue; k++) // This loop moves the the rest of my tbody rows, they all have the same format
+      {
+        $("#tbody").append($("<tr>"));
+        $("#tbody").append($("<td></td>").text(k));      // Here, I start all other rows after the first
+
+        for (j = mStartValue; j <= mEndValue; j++) {   // This loop creates my and completes the data
+          $("#tbody").append($("<td></td>").text(k * j)); // for the rest of the table rows  
+        }
+
+        $("#tbody").append("</tr>");  // a table row is finished
+      } 
+    } // End of if statment
+  }); // End of submit
 });  // end ready
 
 
