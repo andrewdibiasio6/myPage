@@ -83,13 +83,6 @@ body {
     border-radius:0%;
 }
 
-@media (max-width:980px){
-    .Navigation li {
-    display:inline-block;
-    padding-right: 5%; 
-    padding-left: 5%;
-    }
-
 /*adds style too table*/
 table, tbody {
   margin: 0px 0px 10px;
@@ -110,3 +103,12 @@ td {
   max-height:80%;
   border: 1px solid red;
 }
+
+@media (max-width:980px){
+    .Navigation li {
+    display:inline-block;
+    padding-right: 5%; 
+    padding-left: 5%;
+    }
+}
+
