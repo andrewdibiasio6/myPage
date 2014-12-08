@@ -6,79 +6,89 @@ to gray. Created: September 11, 2014 9:00 PM */
 
 
 .title {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 /*This rule changes font style, centers font, and changes furthest background color*/
 
-body {
-  padding: 40px;
-  background-color: #941010;
-  text-align: center;
-  font-family: 'Berlin Sans FB', Arial, sans-serif;
-  font-size: large;
-  line-height: 1.15;
-  margin-top: 136px;
+body {             
+    background-color: #005502;
+    text-align: center;
+    font-family:'Berlin Sans FB', Arial, sans-serif;
+    font-size: large;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.15;
 }
 
 /* Adds attributes to the class background*/
 .background {
-  background-color: #470a67;
-  border-radius: 20px;
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; /* Make the container 100% of the page width */
-  max-width: 100%; /* But stop stretching out at 100% */
-  min-width: 400px; /* And stretching in at 400px% */
-  height: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    position: relative;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Make the container 100% of the page width */
+    max-width: 100%; /* But stop stretching out at 100% */
+    min-width: 400px; /* And stretching in at 400px% */
+    height: 100%;
 }
 
 /* adds the closest background */
 #page.background {
-  background-color: #fff;
-  border-radius: 20px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%; /* Make the container 80% of the page width */
-  max-width: 95%; /* But stop stretching out at 95% */
-  min-width: 30%; /* And stretching in at 30% */
-  height: 85%;
+    background-color: #CCFFBB;
+    border-radius: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%; /* Make the container 80% of the page width */
+    max-width: 95%; /* But stop stretching out at 95% */
+    min-width: 30%; /* And stretching in at 30% */
+    height: 85%; 
 }
 
 /*This class picture assures that all my pictures will resize as the user adjusts the window*/
 .picture {
-  max-width: 90%;
-  height: auto;
-  margin: 0px 0px 10px;
-  border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+    margin: 0px 0px 10px;
+    border-radius:20px;
 }
-
+    
 .Navigation {
-  background-color: #bc3b3b;
-  border-radius: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  float: initial;
+    background-color: #CCFFBB;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float:initial;
+    min-width: 350px;
 }
 
-  /* displays Navigation list items inline*/
-  .Navigation li {
-    display: inline-block;
-    padding-right: 13%;
+/* displays Navigation list items inline*/
+.Navigation li {
+    display:inline-block;
+    padding-right: 13%; 
     padding-left: 13%;
-  }
+    }
 
 /*adjusts index's second nav */
-#Main_second_nav {
-  background-color: #fff;
+#Main_second_nav.Naviagtion {
+    background-color:black;
+    border-radius:0%;
 }
 
+@media (max-width:980px){
+    .Navigation li {
+    display:inline-block;
+    padding-right: 5%; 
+    padding-left: 5%;
+    }
 
 /*adds style too table*/
 table, tbody {
