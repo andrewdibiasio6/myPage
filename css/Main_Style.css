@@ -85,7 +85,7 @@ body {
 
 /*adds style too table*/
 table, tbody {
-  margin: 0px 89.5px 0px 89.5px;
+  margin: 25px 89.5px 0px 89.5px;
   text-align: center;
   background: orange;
   width: 80%;
