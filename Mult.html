@@ -1,23 +1,33 @@
-﻿<head>
-  <title>Andrew's First Web Page</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/Main_Style.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+﻿<!-- No need for html, body, or header tags because Mult.html's content is dynamically placed inside of index.html's content div -->
+
+  <!--
+     Some code is from the following author, though many changes have been made.
+ 
+     File:  /~heines/91.461/91.461-2014-15f/461-lecs/code/DynamicTabs.html
+     Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+     Copyright (c) 2014 by Jesse M. Heines.  All rights reserved.  May be freely 
+     copied or excerpted for educational purposes with credit to the author.
+     updated by JMH on November 14, 2014 at 9:10 PM
+
+     Andrew DiBiasio andrew_dibiasio@student.uml.edu
+     I am a Computer Science Major at the University of Massachusetts Lowell. 
+     I created this file as part of an assignment for my course 91.461 GUI Programming I. 
+     This is my multTabs.html file that creates a dynamic multiplication table from values 
+     submitted in my form by the user. My form is created using html form. I also create 
+     the div myTabs. The myTabs div contains the tabs that contain the multiplication tables 
+     which are both created dynamically using multTabsScript.js.
+     Created on Nov 28, 2014
+  -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/jquery.validate.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/Mult.js"></script>
-
-  <!-- Andrew DiBiasio andrew_dibiasio@student.uml.edu 
-       I am a Computer Science Major at the University of Massachusetts Lowell and I created this file as part of an
-       assignment for my course 91.461 GUI Programming I. This html page uses javaScript to create a dynamic mutiplication table.
-       It also uses the javaScript validate library to do live validation. 
-	 -->
-
-</head>
+  <script type="text/javascript" src="js/multTabsScript.js"> </script>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 
 <body>
 
   <!-- This block of code is my Navigation list -->
- <!-- <div class="Navigation">
+  <!--<div class="Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="About.html">About</a></li>
@@ -25,8 +35,8 @@
       <li><a href="Shel_Silverstein.html">Poem</a></li>
       <li><a href="Mult.html">Multiply</a></li>
     </ul>
-  </div>  (remvoing for now) -->
-  <!-- End of Navigation div --> 
+  </div>  removed for now -->
+  <!-- End of Navigation div -->
 
   <div id="Background_layer2" class="background">
     <div id="page" class="background">
@@ -40,16 +50,18 @@
           Multiplicand End:<input type="text" name="multiplicandEnd" id="multiplicandEnd" size="10" tabindex="1" /><br />
           <input type="submit" name="CreateTable" id="CreateTable" value="Create Table" tabindex="2" />
         </form>
-        <div id="test"></div>
-        <table id="table">
-          <tbody id="tbody"></tbody>
-        </table>
+        <br />
+        <button id="remove-all">Remove All Tables</button>
       </div>
       <!-- End of Body1 div -->
+      <div id="myTabs">  <!-- all tabs and tables are dynamically placed in this div -->
+        <ul>
+        </ul>
+      </div>
+      <!-- End of myTabs div -->
     </div>
-    <!-- End of page dev -->
+    <!-- End of page div -->
   </div>
-  <!-- End of Background_layer2 dev -->
+  <!-- End of Background_layer2 div -->
 </body>
-
-
+</html>
